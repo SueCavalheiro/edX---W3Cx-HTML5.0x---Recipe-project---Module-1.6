@@ -1,1 +1,70 @@
+#box {
+  position: relative;
+  height: 600px;
+  width: 900px;
+  margin: auto;
+}
 
+#principal_image {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 600px;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px -5px rgba(0,0,0,0.5);
+}
+
+#recipe-content {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  height: 560px;
+  width:600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px -5px rgba(0,0,0,0.5);
+}
+
+img {
+  position: absolute;
+  z-index: 99998;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  transition: all 1s;
+}
+
+a {
+  position: absolute;
+  z-index: 99999;
+  bottom: 0px;
+  left: 0px;
+  background-color: #35405A;
+  color: white;
+  text-decoration: none;
+  padding: 4px 6px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+span {
+  display: inline-block;
+  padding: 2px 3px;
+}
+
+svg {
+  height: 12px;
+  width: auto;
+  position: relative;
+  vertical-align: middle;
+  top: -1px;
+  fill: white;
+}
