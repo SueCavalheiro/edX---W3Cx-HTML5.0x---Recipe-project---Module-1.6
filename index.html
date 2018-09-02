@@ -3,17 +3,20 @@
 
   <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Pacifico|Slabo+27px|Cookie|San_Francisco|Helvetica_Neue|Helvetica|Ubuntu|Roboto|Noto|Segoe_UI|Arial|Raleway' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
     <div id='box'>
       <div id='principal_image'>
-        <img src='https://goo.gl/EFVKL4' alt='Stuffed eggplant with tomato salad,
+        <a href="#" title="45 mins"><i class="fa fa-clock-o fa-2x"></i></a>
+        <img src='https://goo.gl/9DyG9x' alt='Stuffed eggplant with tomato salad,
         Photo by Mariana Medvedeva on Unsplash'>
-        <a href="https://goo.gl/1M3xw4" target="_blank" rel="noopener noreferrer"
+        <a id='down' href="https://goo.gl/1M3xw4" target="_blank" rel="noopener noreferrer"
         title="Download free do whatever you want high-resolution photos from Mariana Medvedeva">
         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>unsplash-logo</title>
           <path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8
@@ -25,26 +28,48 @@
       </div>
 
       <div id="recipe-content">
-        <h2>Healthy Meals</h2>
-        <h1>Stuffed Eggplant<br>
-        &amp; Tomato salad</h1>
-        <ul class="info-list">
-        <li class="item">
-          <div class="value">45</div>
-          <div class="text">Mins</div>
-        </li>
-        <li class="item">
-          <div class="value">167</div>
-          <div class="text">Calories</div>
-        </li>
-        <li class="item">
-          <div class="value">4</div>
-          <div class="text">Serves</div>
-        </li>
-      </ul>
+        <!-- Menu -->
+        <ul class="tabs">
+          <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'ingredients')" id="defaultOpen">Ingredients</a></li>
+          <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'preparation')">Preparation</a></li>
+          <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'calories')">Calories</a></li>
+        </ul>
 
+        <div id='ingredients' class='tabcontent'>
+          <h2>Vegetarian Recipe</h2>
+          <h1>Stuffed Eggplant<br>
+          &amp; Tomato salad</h1>
+          <ul class="info-list">
+            <li class="item">
+              <div class="value">45</div>
+              <div class="text">Mins</div>
+            </li>
+            <li class="item">
+              <div class="value">167</div>
+              <div class="text">Calories</div>
+            </li>
+            <li class="item">
+              <div class="value">4</div>
+              <div class="text">Serves</div>
+            </li>
+          </ul>
+          <div id='stars-rating'>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-half-o"></span>
+            <span class='number-rating'>7.825</span>
+          </div>
+        </div>
       </div>
+
+      <div>
+      </div>
+
     </div>
+    <br>
+    <br>
   </body>
 
 </html>
