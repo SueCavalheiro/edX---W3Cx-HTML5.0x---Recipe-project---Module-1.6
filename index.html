@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="myScript.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Pacifico|Slabo+27px|Cookie|San_Francisco|Helvetica_Neue|Helvetica|Ubuntu|Roboto|Noto|Segoe_UI|Arial|Raleway' rel='stylesheet' type='text/css'>
   </head>
@@ -30,13 +36,14 @@
       <div id="recipe-content">
         <!-- Menu -->
         <ul class="tabs">
-          <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'ingredients')" id="defaultOpen">Ingredients</a></li>
+          <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'recipe_title')" id="defaultOpen">Home</a></li>
+          <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'ingredients')">Ingredients</a></li>
           <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'preparation')">Preparation</a></li>
           <li class='tab-item'><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'calories')">Calories</a></li>
         </ul>
+        <h2>Vegetarian Recipe Tips</h2>
 
-        <div id='ingredients' class='tabcontent'>
-          <h2>Vegetarian Recipe</h2>
+        <div id='recipe_title' class='tabcontent'>
           <h1>Stuffed Eggplant<br>
           &amp; Tomato salad</h1>
           <ul class="info-list">
@@ -62,14 +69,32 @@
             <span class='number-rating'>7.825</span>
           </div>
         </div>
-      </div>
 
-      <div>
-      </div>
+        <div id='ingredients' class='tabcontent'>
+          <h1>Ingredients</h1>
+          <ul class='ingredients_list' data-toggle="buttons">
+            <li><input type='checkbox' id='one'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='one'><strong>4</strong> aubergines, halved lengthways</label></li>
+            <li><input type='checkbox' id='two'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='two'><strong>3 tsp</strong> olive oil</lable></li>
+            <li><input type='checkbox' id='three'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='three'><strong>100g</strong> couscous</lable></li>
+            <li><input type='checkbox' id='four'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='four'><strong>1 tsp</strong> ras el hanout</lable></li>
+            <li><input type='checkbox' id='five'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='five'><strong>&frac12;</strong> cucumber, diced</lable></li>
+            <li><input type='checkbox' id='six'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='six'><strong>2</strong> vine tomatoes, diced</lable></li>
+            <li><input type='checkbox' id='seven'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='seven'><strong>&frac12;</strong> ed onion, finely dice</lable></li>
+            <li><input type='checkbox' id='eight'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='eight'><strong>&frac13; x 30g (1oz)</strong> pack flat-leaf parsley, chopped</lable></li>
+            <li><input type='checkbox' id='nine'><i class="fa fa-square-o fa-1x"></i><i class="fa fa-check-square-o fa-1x"></i><label for='nine'><strong>&frac13; x 30g (1oz)</strong> pack mint</lable></li>
+          </ul>
+        </div>
 
+        <div id='preparation' class='tabcontent'>
+          <h1>Preparation</h1>
+        </div>
+
+        <div id='calories' class='tabcontent'>
+          <h1>Calories</h1>
+        </div>
+
+      </div>
     </div>
-    <br>
-    <br>
   </body>
 
 </html>

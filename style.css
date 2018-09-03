@@ -88,11 +88,20 @@ svg {
   border-bottom: 3px solid #D6DBDF;
 }
 
+.tabcontent {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .tab-item {
   display: inline-block;
   text-transform: uppercase;
-  padding-right: 0.75rem;
-  padding-left: 1.5rem;
+  padding-right: 0.4rem;
+  padding-left: 0.8rem;
 }
 
 .tablinks {
@@ -102,17 +111,15 @@ svg {
   color: #AEB6BF;
   text-decoration: none;
   font-size: 14px;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  transition: all 0.2s;
+  transition:all 1s ease;
 }
 
-.tablinks:hover {
+.active, .tablinks:hover {
   border-top: 7px solid #ED346C;
   padding-top: 15px;
   color: #283747;
   margin-top: 0px;
+  transition:all 1s ease;
 }
 
 h2 {
@@ -159,4 +166,32 @@ h1 {
 
 .number-rating {
   color: #283747;
+}
+
+.ingredients_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-left: 20px;
+}
+
+.ingredients_list li {
+  line-height: 2;
+}
+
+label {
+	position: relative;
+	padding-left: 10px;
+  font-family: Raleway, sans-serif;
+  color: #283747;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  transition: all 0.2s;
+}
+
+label:hover{
+	position: relative;
+	padding-left: 10px;
+  font-family: Raleway, sans-serif;
+  color: #ED346C;
 }
