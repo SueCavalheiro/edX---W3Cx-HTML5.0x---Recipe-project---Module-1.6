@@ -190,9 +190,6 @@ label {
 	padding-left: 10px;
   font-family: Raleway, sans-serif;
   color: #283747;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
   transition: all 0.2s;
 }
 
@@ -217,26 +214,26 @@ label:hover{
   height: 325px;
 }
 
-::-webkit-scrollbar {
+#scroll::-webkit-scrollbar {
     width: 7px;
 }
 
-::-webkit-scrollbar-track {
+#scroll::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-::-webkit-scrollbar-thumb {
+#scroll::-webkit-scrollbar-thumb {
     background: #AEB6BF;
 }
 
-::-webkit-scrollbar-thumb:hover {
+#scroll::-webkit-scrollbar-thumb:hover {
     background: #F27060;
 }
 
 h3 {
   text-transform: uppercase;
   font-size: 14px;
-  font-style: bold;
+  font-weight: bold;
   padding: 0px 0px 0px 30px;
   margin: 0px 0px 0px 20px;
 }
